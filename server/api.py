@@ -76,7 +76,6 @@ def _search(json_request):
                     products_to_search.extend(products_data_index_shop_id[shop_id])
 
 
-
     #check if we had tags, but matched no shops
     if len(products_to_search) <= 0 and len(json_request['tags']) > 0:
         return []

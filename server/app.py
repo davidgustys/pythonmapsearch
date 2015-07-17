@@ -32,9 +32,10 @@ def configure_settings(app, settings_override):
 
 def configure_database(app):
 
+    #init db object
     app.db = GeoDb()
 
-
+    #update config with DB details
     app.config.update({
         'DB': {
             'table_index': {
@@ -46,9 +47,10 @@ def configure_database(app):
         }
     })
 
+    #app context for computation(file reads..)
     with app.app_context():
 
-        #cache table data
+        #go through all our data and "fill the tables"
         for table in os.listdir(app.config['DATA_PATH']):
             table_name = table.replace('.csv', '').lower()
             app.db.fill_table(table_name)

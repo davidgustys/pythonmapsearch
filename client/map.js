@@ -64,7 +64,8 @@
       map.setView(center, options.minZoom);
       map.touchZoom.disable();
       map.doubleClickZoom.disable();
-      map.scrollWheelZoom.disable();
+      //TODO: not sure why it was disabled by default?
+      //map.scrollWheelZoom.disable();
 
       return map;
     };

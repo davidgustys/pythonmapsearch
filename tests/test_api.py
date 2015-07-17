@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-
-class TestSearchApi(object):
+class TestApi(object):
 
     sample_request_data =  {'count': 50, 'radius': 1000, 'position': {'lat': 59.33258, 'lng': 18.0649}, 'tags': ["clothes"]}
 
@@ -29,4 +28,4 @@ class TestSearchApi(object):
 
 
 
-#TODO: we could add more test, but for test app it will be enough i think
+#TODO: we could add more tests, but for test app it will be enough i think
