@@ -32,7 +32,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/gdeividas/Documents/Projects/search.6230e62"
+set -gx VIRTUAL_ENV "/Users/gdeividas/Documents/Projects/pythonmapsearch"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

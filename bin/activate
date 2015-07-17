@@ -39,7 +39,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/gdeividas/Documents/Projects/search.6230e62"
+VIRTUAL_ENV="/Users/gdeividas/Documents/Projects/pythonmapsearch"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
