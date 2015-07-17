@@ -1,7 +1,6 @@
-import csv
-import os
+import os, csv
 from geoindex import GeoGridIndex, GeoPoint
-from server.api import data_path
+
 
 class GeoDb(object):
     """
@@ -29,7 +28,7 @@ class GeoDb(object):
 
         nice_list = []
         header_line = ''
-        with open(data_path(table_name + '.csv'), mode='r') as infile:
+        with open(self.data_path(table_name + '.csv'), mode='r') as infile:
 
             reader = csv.reader(infile)
 

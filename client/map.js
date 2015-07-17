@@ -175,15 +175,14 @@
     };
 
     this.search = function(cb) {
-        console.log('sss', self.prefs);
+
         $.postJSON('/search', self.prefs)
         .done(function(data){
-            console.log('sss2');
+
             if(typeof data.products === 'undefined' || typeof data.products !== 'undefined' && data.products.length < 1){
                 return cb('No Products Found. Search using different criteria', []);
             }
             //else
-            console.log('products', data.products);
             return cb(null, data.products);
         })
         .fail(function(jqxhr, textStatus, error){
